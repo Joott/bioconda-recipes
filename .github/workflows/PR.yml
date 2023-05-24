@@ -3,7 +3,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
   push:
-    branches: [ master ]
+    branches: [ test ]
 concurrency:
   group: build-${{ github.event.pull_request.number || github.head_ref }}
   cancel-in-progress: true
